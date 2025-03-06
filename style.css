@@ -1,0 +1,62 @@
+/* General styles */
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #c62f2f;
+}
+
+/* Game board container */
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Styling the tic-tac-toe board */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+
+/* Styling each cell */
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 2px solid #333;
+    font-size: 2em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* When a cell is clicked, disable pointer events */
+.cell.taken {
+    pointer-events: none;
+}
+
+/* Status message */
+#status {
+    font-size: 1.2em;
+    margin: 15px 0;
+  
+}
+
+/* Reset button */
+#reset {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+#reset:hover {
+    background-color: #5a2425;
+}
